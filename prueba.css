@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #fff;
+    --black: #000;
+    --red: #C70039;
+    --blue: #377087;
+    --very-light-pink: #fff;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --sm: 25px;
+    --md: 35px;
+    --lg: 100px;
+    --ssm: 20px;
+    --title_1: 70px;
+    --title_2: 70px;
+    --menu_a: 20px;
+    --p: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+
+.title_1 {
+    color: var(--black);
+    font-size: var(--title_1);
+    text-align: center;
+    font-weight:300;
+    padding: 100px 0px 0px 40px;
+}
+.title_2 {
+    color: var(--black);
+    font-size: var(--title_2);
+    text-align: center;
+    font-weight: 600;
+    padding: 0px 0px 0px 40px;
+
+}
+.header {
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header a {
+    text-decoration: none;
+    color: var(--black);
+    
+}
+
+.logo {
+    width: 200px;
+    padding: 0px 0px 0px 60px ;
+}
+.logo_nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 0px 0px ;
+    flex-wrap: wrap;
+}
+.container nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+}
+
+.container nav ul li:hover > ul {
+    display: block;
+    display: flex;
+    flex-direction: column;
+
+}
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.navigation ul li {
+    display: inline-block;
+}
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    transition: all 0.4s linear;
+    font-size: var(--menu_a);
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 400;
+}
+.navigation ul li a:hover{
+    color: var(--blue);
+    text-decoration:underline;
+}
+.container_about_us {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image_about_occupational {
+    border-radius: 10px;
+    padding: 0px 0px 0px 20px;
+}
+.container_about_us .container_of_text{
+    width: 48%;
+}
+.container_of_text h1 {
+    margin-bottom: 10px;
+}
+.container_of_text .title_1 {
+    text-align: left;
+    margin-bottom: 1px;
+}
+.container_of_text .title_2 {
+    text-align: left;
+    margin-bottom: 1px;
+}
+.container_of_text p {
+    padding: 60px 0px 0px 40px;
+    font-weight: 300;
+    text-align: justify;
+    color: var(--black);
+    font-size: var(--sm);
+    width: 90%;
+}
+.figure_text {
+    display: flex;
+    padding: 100px 20px 0px 40px;
+    flex-wrap: nowrap
+}
+
+.image_1 {
+    width: 50%;
+}
+
+.image_2 {
+    width: 50%;
+}
+
+.image_3{
+    width: 35%;
+    height: 30%;
+    padding: 0px 60px 0px 0px;
+}
+
+main {
+    padding: 40px 0 60px 0;
+}
+
+footer{
+    background: var(--white);
+    padding: 40px 0 10px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.container_footer {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--red);
+}
+.contac_us{
+    display: block;
+    text-align:left;
+    padding: 0px 30px 0px 0px;
+}
+
+.contac_us h2{
+    font-size: 70px;
+    text-align: left;
+}
+
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: var(--black);
+}
+.social_media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--red);
+    border-radius: 50%;
+    text-align: center;
+    color: var(--red);
+}
+
+.social-media-icon i{
+    font-size: 60px;
+    line-height: 100px;
+}
+
+.social-media-icon:hover{
+    background: var(--black);
+    color: var(--white);
+}
+
+
+@media screen and (max-width:900px){
+
+    .header {
+        background-position: center;
+        margin: auto;
+        overflow: hidden;
+    }
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0px 20px 10px;
+        
+    }
+    .logo{
+        width: 40%;
+        padding: 0px 0px 0px 30px;
+    }
+    .container_about_us {
+        flex-direction: column;
+        justify-content:center;
+        padding: 0px 0px 0px 30px;
+    }
+    .image_about_occupational {
+        width: 90%;
+        
+    }
+    .container_of_text .title_1{
+        font-size: 80px;
+        padding: 0px 0px 0px 0px;
+    }
+    .container_of_text .title_2{
+        font-size: 80px;
+        padding: 0px 0px 0px 0px;
+    }
+    .container_of_text p{
+        width: 190%;
+    }
+    .container_about_us .image_about_occupational {
+        width: 90%;
+        padding: 0px 0px 0px 30px;
+    }
+    .figure_text .image_text_1 {
+        width: 210px;
+
+    }
+    .figure_text .image_3{
+        width: 44%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .container_footer{
+        flex-direction: column;
+    }
+    .social_media{
+        padding: 40px 0px 0px 0px;
+    }
+}
